@@ -10,9 +10,9 @@ const io = new Server(http, {
   },
 });
 
-app.get('/', (req, res) => {
-  res.status(200).send('Vercel response');
-});
+// app.get('/', (req, res) => {
+//   res.status(200).send('Vercel response');
+// });
 
 io.on('connection', socket => {
   console.log('Nuevo usuario!');
